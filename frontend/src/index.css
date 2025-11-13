@@ -1,0 +1,131 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-light: rgba(255, 255, 255, 0.9);
+  --color-btn-hover: #313131;
+}
+
+/* FORM CONTAINER */
+.register {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2c2c6c, #1f1f38);
+  font-family: "Josefin Sans", sans-serif;
+  padding: 20px;
+}
+
+/* TITLE */
+.registerTitle {
+  font-size: 3rem;
+  color: var(--color-light);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+}
+
+/* FORM */
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff10; /* slight transparency */
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+}
+
+/* LABELS */
+.registerForm>label {
+  color: var(--color-light);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* INPUTS */
+.registerInput {
+  padding: 12px 15px;
+  background-color: #ffffffbb;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.registerInput:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0px 0px 10px var(--color-primary-variant);
+}
+
+/* BUTTON */
+.registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background: var(--color-primary);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.registerButton:hover {
+  background: #1a8cff;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(77,181,255,0.4);
+}
+
+/* RESPONSIVE STYLING */
+@media screen and (max-width: 480px) {
+  .register {
+    padding: 10px;
+  }
+
+  .registerTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .registerInput {
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .registerButton {
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .registerForm {
+    padding: 20px;
+  }
+}
